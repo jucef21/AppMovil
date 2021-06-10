@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-left">
+      <img src="assets/img/marcaLogo1.png" class="img img-responsive" alt="" width="50" height="50">
+    </a>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="\">App Movil Geolocalización</a>
+      <button 
+        class="navbar-toggler collapsed" 
+        type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarColor01" 
+        aria-controls="navbarColor01" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="navbar-collapse collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/']">Inicio
+              
+            </a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/login']">Acceder</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" [routerLink]="['/register']">Registrar</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" >Salir</a>
+          </li>
+         </ul>
+
+      </div>
+    </div>
+  </nav>

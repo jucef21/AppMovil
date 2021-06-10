@@ -1,0 +1,51 @@
+<div class="container">
+    <div class="row vh-10 justify-content-center aling-items-center">
+        <div class="col-auto bg-light p-5">
+            <div class="card">
+                <span class="border border-primary"></span>
+                <div class="card-body">
+                    <form  [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                        <fieldset>
+                            <div class="col-auto p-2 text-center"><legend><h2>Ingreso a la APP</h2></legend></div>
+                            
+                            <div class="form-group">
+                                <label for='email' class="form-label mt-4">Correo Electrónico:</label>
+                                <input type="text" class="form-control" formControlName="email" id="email" name="email" aria-describedby="emailHelp" placeholder="Ingrese Correo">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password" class="form-label mt-4">Contraseña:</label>
+                                <input type="password" class="form-control" formControlName="password" id="password" name="password" placeholder="Contraseña">
+                            </div>
+                            <p></p>
+
+                            <div style="text-align:left">
+                                <label>
+                                    <input type='checkbox' value='SI' id='acepto'/>He leído y acepto las condiciones
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <table class="default">
+                                    <tr>
+                                    <td><input type="submit" class="btn btn-success btn-lg" value="ACEPTAR" ></td>
+                                    <th><p class="text-white">esp</p></th>
+                                    <td><input type="reset" class="btn btn-danger btn-lg" value="CANCELAR"></td>
+                                    </tr>
+                                </table>
+                            </div>  
+                          </fieldset>
+                    </form>
+                    <p></p>
+                    <div class="form-group mt-3">
+                        <p>Acepto las <a [routerLink]="['/condi']">Condiciones</a> de uso y la <a [routerLink]="['/poli']">Política</a> de Privacidad.</p>
+                        <p>Si no tienes una cuenta te puedes <a [routerLink]="['/register']">Registrar</a> de uso</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

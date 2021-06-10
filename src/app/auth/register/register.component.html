@@ -1,0 +1,64 @@
+<div class="container">
+    <div class="row vh-10 justify-content-center aling-items-center">
+        <div class="col-auto bg-light p-4">
+            <div class="col-12 text-left">
+                <section class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="rounded float-center" src="assets/img/usuarios.jpg" width="500" height="250" />
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div>
+                                        <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+                                        <fieldset>
+                                            <div class="col-auto p-2 text-center"><legend><h2>Registro de la APP</h2></legend></div>
+                    
+                                            <div class="form-group">
+                                                <label for="Nombres" class="form-label mt-4">Nombres:</label>
+                                                <input type="text" class="form-control" id="nombre" placeholder="Ingrese Nombres">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Apellidos" class="form-label mt-4">Apellidos:</label>
+                                                <input type="text" class="form-control" id="apellido" placeholder="Ingrese Apellidos">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="telefono" class="form-label mt-4">Teléfono Celular</label>
+                                                <input type="number" name="numero" class="form-control" id="telefono" placeholder="Ingrese Teléfono" >
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="email" class="form-label mt-4">Coreo Electrónico:</label>
+                                                <input type="email" class="form-control"  formControlName="email" id="email" placeholder="Ingrese Coreo Electrónico">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="password" class="form-label mt-4">Contraseña:</label>
+                                                <input type="password" pattern=".{5,}" class="form-control"  formControlName="password" id="password" placeholder="Contraseña">
+                                            </div>
+                    
+                                            <div class="form-group">
+                                                <label for="password" class="form-label mt-4">Repite la Contraseña:</label>
+                                                <input type="password" pattern=".{5,}" class="form-control" formControlName="password" id="password2" placeholder="Contraseña">
+                                            </div>
+                    
+                                            <p></p>
+                                            <table class="default">
+                                                <tr>
+                                                <td><input type="submit" class="btn btn-success btn-lg" value="ACEPTAR" ></td> 
+                                                <th><p class="text-white">esp</p></th>
+                                                <td><input type="reset" class="btn btn-danger btn-lg" value="CANCELAR" /></td>
+                                                </tr>
+                                            </table>
+                                        </fieldset>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+

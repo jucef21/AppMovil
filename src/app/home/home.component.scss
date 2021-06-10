@@ -1,0 +1,15 @@
+.full-width-image {
+    top: -20px;
+    width: 100vw;
+    position: relative;
+    left: 50%;  
+    margin-left: -50vw;
+}
+.full-width-image img {
+    width: 100%;
+}
+.texto-encima{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "login-movil-d68f6": {
+      "hosting": {
+        "AppMovil": [
+          "login-movil-d68f6"
+        ]
+      }
+    }
+  }
+}
